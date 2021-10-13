@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import AdmVentas from '../components/AdmVentas'
 import Cambiarcontrasena from '../components/Cambiar_contrasena'
 import CrearProducto from '../components/CrearProducto'
+import EditarProducto from '../components/Editar_Producto'
 import GestorVentas from '../components/GestorVentas'
 import HistorialVentas from '../components/HistorialVentas'
 import Login from '../components/Login'
@@ -33,6 +34,9 @@ export default function AppRouter() {
             </Route>
             <Route path="/CrearProducto">
                <CrearProducto/>
+               </Route>
+            <Route path="/EditarProducto">
+               <EditarProducto/>
             </Route>
             <Route path="/">
                 <Login/>
